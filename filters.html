@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Filters</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        div {
+            background-color: #99CCFF;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 20px;
+            filter:grayscale(0);
+            /*width:500px;*/
+        }
+
+        img {
+            float: left;
+            margin: 0 20px 20px 20px;
+            border: 2px solid black;
+            filter:saturate(0);
+            transition: filter 1s;
+        }
+
+        .greyscale:hover {
+            filter: saturate(0);
+        }
+
+        .specsavers {
+            filter: blur(10px);
+        }
+
+        .sepia {
+            filter: sepia(10);
+        }
+        .brightness{
+            filter: brightness(10);
+        }
+        .contrast{
+            filter:contrast(0.5);
+        }
+        
+        .hue-rotate{
+            filter:hue-rotate(25deg);
+        }
+        .drop-shadow{
+            filter:drop-shadow(10px 16px 10px rgba(0,0,0,0.5));
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Original</h1>
+        <img src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+    <div>
+        <h1>Greyscale</h1>
+        <img class="greyscale" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+    <div>
+        <h1>Blur</h1>
+        <img class="specsavers" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+    <div>
+        <h1>Sepia</h1>
+        <img class="sepia" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+    <div>
+        <h1>brightness</h1>
+        <img class="brightness" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+    <div>
+        <h1>Contrast</h1>
+        <img class="contrast" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+    <div>
+        <h1>Hue-rotate</h1>
+        <img class="hue-rotate" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+    <div>
+        <h1>Drop-shadow</h1>
+        <img class="drop-shadow" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+</body>
+
+</html>
