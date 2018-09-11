@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .transformed{
+            
+            border:2px;
+            height: 80%;
+            width: 80%;
+            transition: transform  0.5s;
+            filter: sepia(9);
+            
+        }
+        
+        .transformed:hover{
+            transform: rotate(180deg);
+            filter: contrast(9);
+            
+        }
+        
+        .transformed1{
+            border: 15px;
+            height: 100px;
+            width: 200px;
+            transition: transform 10s;
+            
+        }
+        
+        .transformed1:hover{
+           width: 50px;
+           height: 50px;
+           filter: contrast(10);
+           transform:rotate(360deg);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <img  class="transformed" src= "images/owl.jpg" width="200">
+    <img  class="transformed1" src= "images/owl.jpg" width="200">
+</body>
+</html>
