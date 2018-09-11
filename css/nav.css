@@ -34,7 +34,7 @@ body {
 .picture2{
     display: none;
 }
-    
+
 @media(min-width: 440px) {
     nav ul li {
         display: inline-block;
