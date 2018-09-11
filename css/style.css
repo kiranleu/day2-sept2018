@@ -1,6 +1,45 @@
-.box{
+.box {
     color: black;
     border: 1px solid black;
     height: 200px;
-    width:50px; 
+    width: 50px;
+
+
+    
+}
+
+@media (min-width: 320px) and (max-width:768px) {
+    .box {
+        background-color: blue;
+         width: 200%;
+        
+    }
+
+    .mobile {
+        display: none;
+       
+    }
+    
+    .box1{
+     
+        display: none;
+        color: black;
+    }
+}
+
+@media (min-width: 768px) {
+    .box{
+        background-color: red;
+        width: 30%;
+    }
+    
+    .mobile{
+        display: none;
+    }
+    
+    .box1{
+       
+        background-color: pink;
+        width: 30%;
+    }
 }
